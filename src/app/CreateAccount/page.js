@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import styles from './CreateAccount.module.css'; // Import CSS module
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function CreateAccount() {
     const [name, setName] = useState('');
@@ -74,6 +75,12 @@ export default function CreateAccount() {
                         />
                     </div>
                     <button type="submit" className={styles.btn}>Create User</button>
+                    <p className={styles.paragraph}>
+                        Already have an account?{" "}
+                        <Link href="/login" className={styles.link}>
+                        Login 
+                        </Link>
+                    </p>
                     
                 </form>
             </div>

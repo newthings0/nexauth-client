@@ -59,7 +59,7 @@ export default function Login() {
             Log in
           </button>
           <p className={styles.paragraph}>
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/CreateAccount" className={styles.link}>
               Sign up
             </Link>
@@ -77,7 +77,9 @@ export default function Login() {
           onClick={() => signIn("google")}
         >
           <span>
-            <svg viewBox="0 0 32 32" width="24" height="24">
+            <svg 
+              viewBox="0 0 32 32" 
+              width="24" height="24">
               <defs>
                 <path
                   id="A"
@@ -88,7 +90,10 @@ export default function Login() {
                 <use xlinkHref="#A" />
               </clipPath>
               <g transform="matrix(.727273 0 0 .727273 -.954545 -1.45455)">
-                <path d="M0 37V11l17 13z" clipPath="url(#B)" fill="#fbbc05" />
+                <path 
+                  d="M0 37V11l17 13z" clipPath="url(#B)" 
+                  fill="#fbbc05" 
+                />
                 <path
                   d="M0 11l17 13 7-6.1L48 14V0H0z"
                   clipPath="url(#B)"
